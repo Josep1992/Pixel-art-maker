@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 30px;
+}
+
+td {
+  width: 30px;
+}
+
+input[type='number'] {
+  width: 6em;
+}
+
+input[type='submit'] {
+  margin: 5px;
+}
+
+button {
+  margin: 2px;
+  width: 4.3em;
+}
