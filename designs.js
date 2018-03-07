@@ -10,7 +10,6 @@ form = $('#sizePicker');
 resetBtn = $('#reset');
 clearBtn = $('#clear');
 
-//Starts the page with a grid of 5 table rows and 5 table cells
 const makeGrid = () => {
   for (row = 0; row < height.val(); row++) {
     tableRow = $('<tr></tr>');
@@ -21,6 +20,9 @@ const makeGrid = () => {
     canvas.append(tableRow);
   }
 };
+
+//Starts the page with a grid of 5 table rows and 5 table cells
+makeGrid();
 
 // On submit form creates a grid with the given values on each input
 form.on('submit', e => {
