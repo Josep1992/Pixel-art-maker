@@ -24,6 +24,9 @@ const makeGrid = () => {
 
 // On submit form creates a grid with the given values on each input
 form.on('submit', e => {
+  // remove any previous grid
+  canvas.children().remove();
+  // Build's grid
   makeGrid();
   e.preventDefault();
 });
