@@ -21,7 +21,7 @@ const makeGrid = () => {
   }
 };
 
-//Starts the page with a grid of 5 table rows and 5 table cells
+//Starts the page with a grid of 10 table rows and 10 table cells
 makeGrid();
 
 // On submit form creates a grid with the given values on each input
