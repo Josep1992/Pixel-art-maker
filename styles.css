@@ -19,11 +19,13 @@ body {
 }
 
 h1 {
+  color: #333;
   font-size: 4em;
   background: var(--secondary);
   padding: 0.65em;
   border-radius: var(--border);
   margin-bottom: 0.65em;
+  border: solid 3px var(--detail);
 }
 
 h2 {
@@ -69,7 +71,6 @@ input[type='number']:focus {
 
 input[type='submit'] {
   margin: 1em 0 1em 0;
-  font-family: var(--font);
 }
 
 button {
@@ -78,6 +79,9 @@ button {
 }
 
 .btn {
+  color: #333;
+  background: var(--secondary);
+  font-family: var(--font);
   padding: 0.45em;
   box-shadow: var(--shadow);
   border-radius: var(--border);
