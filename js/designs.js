@@ -40,7 +40,7 @@ form.on('submit', e => {
 
 // On click table cell background becomes that of the color input
 canvas.on('click', 'td', function() {
-  $(this).css('background-color', `${color.spectrum().val()}`);
+  $(this).css('background-color', `${color.val()}`);
 });
 
 // On double click table cell background becomes transparent
