@@ -4,14 +4,16 @@
 <head>
     <title>Pixel Art Maker!</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="spectrum.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/spectrum.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 </head>
 
 <body>
     <h1>Pixel Art Maker</h1>
 
     <h2>Choose a Grid Size</h2>
+
     <form id="sizePicker">
         <label for="height">Grid Height:</label>
         <input type="number" id="inputHeight" name="height" min="1" max="150" value="10" autofocus>
@@ -21,24 +23,25 @@
         <br>
         <input type="submit" class="btn btnPush">
     </form>
+
     <div class="buttons">
         <button id="reset" class="btn btnPush">Reset</button>
         <button id="clear" class="btn btnPush">Clear</button>
     </div>
+
     <br>
     <h3>Pick A Color</h3>
     <br>
 
-    <input type="color" id="colorPicker">
+    <input type='color' id="colorPicker">
 
     <h3>Design Canvas</h3>
     <br>
     <table id="pixelCanvas">
 
     </table>
-    <script src='spectrum.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="designs.js"></script>
+    <!-- <script src="js/spectrum.js"></script> -->
+    <script src="js/designs.js"></script>
 </body>
 
 </html>
