@@ -14,7 +14,7 @@ body {
   margin: 3em;
   font-family: var(--font);
   color: var(--text);
-  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  text-shadow: 0 5px 70px rgba(0, 0, 0, 0.3), 0 15px 20px rgba(0, 0, 0, 0.22);
   background: var(--primary);
 }
 
@@ -39,7 +39,7 @@ h2:first-of-type {
 table,
 tr,
 td {
-  border: 2px solid black;
+  border: 2px solid #333;
 }
 
 table {
@@ -71,6 +71,7 @@ input[type='number']:focus {
 
 input[type='submit'] {
   margin: 1em 0 1em 0;
+  width: 12%;
 }
 
 button {
@@ -87,4 +88,20 @@ button {
   border-radius: var(--border);
   outline-color: var(--detail);
   border: solid 2px var(--detail);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.fa {
+  margin: 0.15em;
+  color: var(--detail);
+}
+
+.fa:hover {
+  transform: scale(1.2);
 }
