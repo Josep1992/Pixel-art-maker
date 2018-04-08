@@ -1,4 +1,13 @@
-let height, weight, grid, form, color, tableRow, tableCell, resetBtn, clearBtn;
+let height,
+  weight,
+  grid,
+  form,
+  color,
+  tableRow,
+  tableCell,
+  resetBtn,
+  clearBtn,
+  mouseDrag;
 
 height = $('#inputHeight');
 width = $('#inputWeight');
@@ -46,6 +55,22 @@ canvas.on('click', 'td', function() {
 // On double click table cell background becomes transparent
 canvas.on('dblclick', 'td', function() {
   $(this).css('background-color', 'transparent');
+});
+
+// On mouse over paint
+canvas.on('mousedown', 'td', function() {
+  mouseDrag = true;
+  canvas.on('mouseover', 'td', function() {
+    if (mouseDrag == true) {
+      $(this).css('background-color', `${color.val()}`);
+    }
+    canvas.on('mouseup', 'td', function() {
+      mouseDrag = false;
+      if (mouseDrag == false) {
+        $(this).css('background-color', 'none');
+      }
+    });
+  });
 });
 
 // On mouse down on the reset button reload page.
